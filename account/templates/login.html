@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>用户登录</title>
+	</head>
+	<style type="text/css">
+		body{color:#efd;background:#453;padding:0 5em;margin:0;text-align:center}
+		h1{padding:2em 1em;background:#675;text-align:center}
+		h2{color:#bf8;border-top:1px dotted #fff;margin-top:2em}
+		p{margin:1em 0}
+	</style>
+	<body>
+	  <h1>登录页面：欢迎加入我们</h1>
+		<h2>
+		  {% if form.errors %}
+			<p style="color: red;">
+			  Please correct the error{{ form.errors|pluralize }} below.
+			</p>
+		  {% endif %}
+		  {% for item in error %}
+			<p style="color:red;">{{item}}</p>
+		  {% endfor %}
+		</h2>
+		  
+	  <form action="" method="post">
+	  {% csrf_token %}
+		<table align="center">
+		  {{form.as_p}}
+		</table>
+		</br>
+		<input type="submit" value="登录" style="width:100px; height:30px; font-size:1.4rem;">
+	  </form>
+	</body>
+</html>

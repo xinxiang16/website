@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>鑫祥财富网欢迎您</title>
+	
+	<link href="..\..\static\js\bootstrap-3.3.4\dist\css\bootstrap.min.css" rel="stylesheet" type="text/css" media="screen"/>
+	<link href="..\..\static\js\css\grid.css" rel="stylesheet" type="text/css" media="screen"/>
+	<link href="..\..\static\js\css\navbar.css" rel="stylesheet" type="text/css" media="screen"/>
+
+	<style type="text/css">
+	
+		body{
+		  color:#585858;
+		  font-size:1.5em;
+		  line-height:1.666em;
+		  font-family: "Microsoft YaHei","tahoma", "arial", "SimSun";
+		  word-wrap: break-word;
+		  }
+		  
+		table {
+     	border-collapse:collapse;
+		align: left;
+		}
+
+		td,th{
+     	text-align: left;
+     	padding:0.01em;
+		width:10%;
+		font-size:1.5em;
+		font-weight: bolder
+		}
+	 
+		.container{
+			text-align: center;
+			font-size: 1.2em;
+			width:90%;
+			
+		}
+ 		.header{
+			margin-top:-1em;
+			height: 8.8em;
+			line-height: 2em;
+			overflow: hidden;
+			color:black;
+		}
+		
+		.word_style{
+		    width:4em;
+		    height:30px;
+		    font-weight: bolder;
+		    font-size: 18px;
+		}
+		
+		p#platform{
+			padding-top:5px;
+			text-align:left;
+			font-size:18px;
+			line-height:26px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.p_ques{
+			color:#FF4D4D;
+			padding:10px;
+			font-size:18px;
+		}
+		.p_answ{
+			font-size:16px;
+			line-height:28px;
+			padding-left:30px;
+		}
+		a.trend:link {background-color:#FF704D;text-decoration: underline}  
+		a.trend:visited {text-decoration:none;}
+		a.trend:hover {background-color:#FF704D;text-decoration:none;}  
+		a.trend:active {background-color:#FF704D;} 
+
+		img{max-width: 100%;height: auto;width: auto\9;}
+
+	</style>
+	
+<script language="javascript" type="text/javascript">
+
+	
+    function strToJson(str){
+        var json = eval('(' + str + ')');
+        return json;
+        }
+	
+	
+	function trend1Click()
+	{
+		window.open("/trend1/","_blank")
+	}
+	function trend2Click()
+	{
+		window.open("/trend2/","_blank")
+	}
+	function registerClick()
+	{
+		window.open("/account/regist/","_blank")
+	}
+	function loginClick()
+	{
+		window.open("/account/login","_blank")
+	}
+	
+    
+</script>
+</head>
+<body>
+
+<div class="container">
+	<section class="header">
+		<div style="padding-top:10px;float:left">
+			<h3 align="left"><button class="btn btn-large btn-primary" type="button" onClick="registerClick()">注 册</button> </h3>
+			<h3 ><button class="btn btn-large btn-primary" type="button" onClick="loginClick()">登 录</button></h3>
+		</div>
+		 <div style="padding-bottom:10px; float:center">
+			<img src="/static/head1.png"/>
+		</div>
+	</section>
+</div>
+
+<div style="background-color:#F6DBDB;">
+	<div class="container">
+		<ul class="nav nav-tabs" style="background-color:#CACCEC;border:solid 3px #EFB2F5;">
+			<li class="active">
+			 <a id="c_1" href="#aboutUs" data-toggle="tab">
+			 <p style="font-size: 1.1em;font-weight: bolder;">&nbsp;公司简介&nbsp;</p></a>
+			</li>
+			<li style="border-left:solid 3px #EFB2F5;margin-left:-4px">
+			 <a id="c_2" href="#products" data-toggle="tab">
+			 <p style="font-size: 1.1em;font-weight: bolder;">&nbsp;投资产品&nbsp;</p></a>
+			</li>
+			<li style="border-left:solid 3px #EFB2F5;margin-left:-4px">
+			 <a id="c_3" href="#riskControl" data-toggle="tab">
+			 <p style="font-size: 1.1em;font-weight: bolder;">&nbsp;风险把控&nbsp;</p></a>
+			</li>
+			<li style="border-left:solid 3px #EFB2F5;margin-left:-4px">
+			 <a id="c_4" href="#platformStyle" data-toggle="tab">
+			 <p style="font-size: 1.1em;font-weight: bolder;">&nbsp;平台特色&nbsp;</p></a>
+			</li>
+			<li style="border-left:solid 3px #EFB2F5;margin-left:-4px">
+			 <a id="c_5" href="#consult" data-toggle="tab">
+			 <p style="font-size: 1.1em;font-weight: bolder;">&nbsp;投资咨询&nbsp;</p></a>
+			</li>
+			<li style="border-left:solid 3px #EFB2F5;margin-left:-4px">
+			 <a id="c_6" href="#trend" data-toggle="tab">
+			 <p style="font-size: 1.1em;font-weight: bolder;">&nbsp;行业动态&nbsp;</p></a>
+			</li>
+			
+		</ul>
+		<div class="tab-content"> 
+		  <div class="tab-pane" id="platformStyle" style="background-image:url(/static/bround.png)">
+			</br>
+			<div>
+				<h4 style="font-weight: bolder;color:#0078BD;margin-top:-5px">
+					鑫祥财富致力于打造专业的互联网金融投资团队，做您财富长期稳健增值的好帮手
+				</h4>
+				<p  id='platform'>
+					互联网金融时代，最好的时代，也是最坏的时代。
+				</p>
+				<p  id='platform'>
+					这个时代，货币不断贬值，同样的一万块在15年前，10年前，5年前和现在，购买力一直在<font color="#2D9F19">缩水</font>。
+				</p>
+				<p  id='platform'>							
+					这个时代，被认为万无一失的银行也开始允许破产倒闭，银行存款收益也一降再降，一年期基准存款利率已经降低到<font color="red">1.5%</font>的年化。
+				</p>
+				<p  id='platform'>
+					这个时代，股市波澜壮阔，跌宕起伏，但绝大部分的中小股民从未曾改变一茬一茬被割韭菜的命运。
+				</p>
+				<p  id='platform'>
+					这个时代，房市已经没有了原来的冲劲，买房不再是大胆放心买买买，一本万利无风险的理财选择。
+				</p>
+				<p  id='platform' style="color:#0078BD">
+					理财无门？不，有门！<img src="/static/test.png"/>
+				</p>
+				<p  id='platform'>
+					互联网金融顺应时代的大潮，强势袭来！
+				</p>
+				<p  id='platform'>
+					投资起点低，<font color="red">6%－20%</font>以上的高收益，期限灵活，投资产品类型多种多样，契合中产阶级的投资需求，互联网金融正茁壮生长。
+				</p>
+				<p  id='platform'>
+					但作为普通投资者，如何在数以千计的网贷平台中甄选出靠谱的产品，如何规避各种投资陷阱，如何最大程度地保障投资本金
+					安全，成为投资人面前无法绕开的命题。
+				</p>
+				<p  id='platform' style="color:#0078BD">
+					鑫祥财富致力于打造专业投资团队，发现陷阱，规避风险，解决您的难题！
+				</p>
+				</br>
+			</div>
+		  </div> 
+		  <div class="tab-pane" id="products" style="background-color:#F9D8D7;">
+			<div style="padding:20px">
+				<h3 align='left' style="padding-bottom:10px">产品列表</h3>
+				<div width="100%">
+				<table width="100%" style="table-layout:fixed;text-align:left;border:2px solid  #C1BBAB;">
+					<tr style="border-bottom:1px solid  #C1BBAB;">
+						<th style="width:15%;text-align:center;border-right:1px solid  #C1BBAB;font-size:16px;">
+							鑫祥一号
+						</th>
+						<td style="width:85%;padding-left:20px"> 
+							<h5 style="font-weight: bolder">项目特点：</h5>
+							<p style="font-size:15px;color:#0078BD"> 灵活性强，闲散资金增值小能手。</p> 
+							<h5 style="font-weight: bolder">收益：</h5>
+							<p style="font-size:15px;"><font color="#0078BD">9%－11%年化</font>（投资未满月部分按天计算年化9%，满月部分10%，满季度部分11%）</p> 
+							<h5 style="font-weight: bolder">起投金额：</h5>
+							<p style="font-size:15px;color:#0078BD">最低2千元人民币起投，单个投资人最高5万元人民币。</p> 
+							<h5 style="font-weight: bolder">期限：</h5>
+							<p style="font-size:15px;color:#0078BD">七天以上，随时赎回，投资本息 T+1到账。</p> 
+						</td>
+					</tr>
+					<tr>
+						<th style="text-align:center;border-right:1px solid  #C1BBAB;font-size:16px;">	    
+							鑫祥二号
+						</th>
+						<td style="padding-left:20px;"> 
+							<h5 style="font-weight: bolder">项目特点：</h5>
+							<p style="font-size:15px;color:#0078BD"> 高收益，流动性良好，资产稳健增值利器。</p> 
+							<h5 style="font-weight: bolder">收益：</h5>
+							<p style="font-size:15px;"><font color="#0078BD">14%年化</font>（每月支付11%年化收益，满季度增补3％年化收益）</p> 
+							<h5 style="font-weight: bolder">起投金额：</h5>
+							<p style="font-size:15px;color:#0078BD">最低3万元人民币起投，单个投资人最高20万元人民币（待调整）</p> 
+							<h5 style="font-weight: bolder">期限：</h5>
+							<p style="font-size:15px;color:#0078BD">至少三个月，每三个月为一期，到期可赎回，资金T+1到账。</p> 
+						</td>
+					</tr> 
+				</table>
+				</div>					
+			  </div>
+		  </div> 
+		  <div class="tab-pane" style="text-align:left; font-size: 16px;background-image:url(/static/bround.png);padding-bottom:10px" id="riskControl">
+			</br>
+			<h4 style="font-weight: bolder;text-align:center;color:#0078BD;margin-top:-5px;padding-bottom:10px">鑫祥财富，助您资产一路稳健增长</h4>
+			<p style="padding-left:20px">我们的风控只有一个目标，就是挑选并投资可以长久生存发展的平台及其产品。 </p> 
+			<p style="padding-left:20px">我们主要从<b><font color="#0078BD">平台选择</font></b>，<b><font color="#0078BD">标的选择</font></b>，<b><font color="#0078BD">分散度</font></b>，<b><font color="#0078BD">灵活性</font></b>几方面进行控制：</p> 
+			<div style="padding:20px">
+				<p><b><font color="#0078BD">一 平台选择</font></b>着重衡量其是否有足够的盈利的能力和运营模式，以确保长期生存发展，确保投资本金安全： </p> 
+				<div style="text-align:left; font-size:15px;padding-left: 20px" >
+					<p><b><font color="#0078BD">1&nbsp;杠杆：</font></b>反映平台承担的资金杠杆情况 </p>
+					<p><b><font color="#0078BD">2&nbsp;分散度：</font></b>反映平台借款金额的分散情况</p>
+					<p><b><font color="#0078BD">3&nbsp;透明度：</font></b>反映平台信息的披露透明情况 </p>
+					<p><b><font color="#0078BD">4&nbsp;流动性：</font></b>反映平台投资人的投标资金周转速度情况 </p>
+					<p><b><font color="#0078BD">5&nbsp;运营能力和历史：</font></b>反映平台的运营表现 </p>
+					<p><b><font color="#0078BD">6&nbsp;违约成本：</font></b>反映平台违约和借款人违约所承担的隐性成本 </p>
+				</div>
+				<p style="padding-top:10px;color:#0078BD"><b>二 标的选择</b></p>
+				<p style="text-align:left; font-size:15px;padding-left: 20px"> 我们选择的标的主要是有固定资产和车等变现较快的资产作为抵押的抵押标，同时充分考虑标的债权转让等灵活性因素，以确保在平台出现异常征兆或者行业大环境有不可控力的变化时，有更好处置资产的选择。</p>
+				<p style="padding-top:10px;color:#0078BD"><b> 三 分散度</b></p>
+				<p style="text-align:left; font-size:15px;padding-left: 20px">我们在投资操作上,会实现足够程度的分散,把募集来的资金投到几十家平台的数以百计标的中去，做到足够的分散，确保不会因为任何单个平台和产品而对整体投资产生重大影响。 </p>
+				<p style="padding-top:10px;color:#0078BD"><b> 四 期限灵活</b></p>
+				<p style="text-align:left; font-size:15px;padding-left: 20px"> 在投资期限上,我们会进行长期中期短期标合理搭配,保持充足的流动性以应对投资人的应急兑付和赎回，以保持良好的投资体验，应对流动性风险。</p>
+			</div>
+		  </div> 
+
+		  <div class="tab-pane active" style="text-align:left;background-image:url(/static/bround.png);padding-bottom:10px" id="aboutUs">
+				</br>
+				<div style="padding:20px">
+					<p style="font-size:18px;line-height:30px;"> 
+						<b>鑫祥财富资产管理有限公司</b>，成立于深圳前海，注册资金<font style="background-color:#FAED00">1000万</font>。主要涉足客户财富管理（互联网金融投资、私募股权投资、对冲、套利型基金等）、投资顾问、信息咨询、经纪服务等各项业务，公司与国内外多家知名金融机构合作，以专业、严谨、规范、稳健的投资管理理念，坚持资金安全第一的风控原则，结合多元化金融投资工具，为客户管理好每一份投资，实现财富的稳健增长。
+
+					<p>
+				</div>
+				</br>
+				<div style="padding:20px">
+					<p style="font-size:18px;line-height:30px;"> 
+					<b>投资范围</b>：互联网金融平台标的，大宗商品对冲、套利型基金，股权投资及固定收益类资产等。
+					鑫祥财富使命：对客户负责，服务至上，诚信保障，稳定回报，资产增值；我们追求长期、稳健、持久、卓越的业绩表现。
+					<p>
+				</div>
+				</br>
+				<div style="padding:20px">
+					<table width="100%" style="table-layout:fixed;text-align:left;">
+						<tr style="border-bottom:1px solid  #C1BBAB;">
+						<td class="word_style">企业精神</td>
+						</tr>
+						<td style="padding-left:60px;padding-bottom:10px;padding-top:10px;font-size:16px">专业诚信、卓越共享、务实务本、不断超越</td>
+						<tr style="border-bottom:1px solid  #C1BBAB;"><td class="word_style">投资理念</td></tr>
+						<td style="padding-left:60px;padding-bottom:10px;padding-top:10px;font-size:16px">洞察市场、稳健投资、严控风险、管理卓越</td>
+						<tr style="border-bottom:1px solid  #C1BBAB;"><td class="word_style">客户理念</td></tr>
+						<td style="padding-left:60px;padding-bottom:10px;padding-top:10px;font-size:16px">客户至上、诚信服务、超值回报、客户满意</td>
+					</table>
+				</div>
+		  </div> 
+		  
+		  <div class="tab-pane" style="text-align:left;background-color:#F9D8D7;" id="consult">
+				</br>
+				<div style="font-weight: bolder;padding:20px">
+					<p class="p_ques"> 
+						鑫祥财富的产品投资标的是什么？
+					</p>
+					<p class="p_answ">现阶段的产品，鑫祥一号和鑫祥二号都是投资于网贷平台上的标的和产品。</p>
+					
+					<p class="p_ques"> 
+						投资鑫祥财富的产品有本息保障吗？
+					</p>
+					<p class="p_answ">鑫祥财富承诺对所有产品投资保本保息。</p>
+					
+					<p class="p_ques"> 
+						虽然承诺保障本息，但是鑫祥财富如何保障资金安全？
+					</p>
+					<p class="p_answ">我们奉行“精选＋分散＋监测”的投资策略，在精选稳健平台优质产品的基础上，进行合适地分散投资，以分散降低风险，在投资后利用技术手段对所投平台和产品进行实时监测，动态监测风险，做到有风险早发现，早应对。</p>
+					
+					<p class="p_ques"> 
+						鑫祥财富投资的平台安全吗？
+					</p>
+					<p class="p_answ">所有投资平台都是经过我们实地考察和调研之后筛选出来的，投资的期限和操作也是根据投后动态监测来进行，我们投资的平台并不是一成不变的，投资期限也并不固定。投资平台的标的也会更侧重流动性好，可以进行债权转让的平台。</p>
+					
+					<p class="p_ques"> 
+						你们的投资收益是多少？怎么支付？
+					</p>
+					<p class="p_answ">现阶段两款产品，收益为年化9%－14%，另外根据行情及实际投资操作情况，会有浮动分红。投资收益每月按期支付到投资人指定银行卡，支付日为每月15日。</p>
+					
+					<p class="p_ques"> 
+						你们的投资收益并不太高，还有好多平台收益比你们高？
+					</p>
+					<p class="p_answ">鑫祥的使命是帮助投资人在稳健的前提下寻找资产增值的最大化选项，我们致力于稳健地投资，而不是冒险地投机，追求投资的长期稳健增长是我们的首要目标。</p>
+					<p class="p_ques"> 
+					投资以后如果着急用钱怎么办，可以提前赎回吗？
+					</p>
+					<p class="p_answ">我们的产品设计充分地考虑了投资人对流动性的可能需求，鑫祥一号只要投资满七天，随时可以赎回，投资本金和收益T+1到账；鑫祥二号最短投资期限为三个月，之后每三个月一期，到期提前7天告知我们即可，其它时间可以赎回，但考虑到我们的实际运营成本，我们会扣减投资本金1%的费用之后，投资本金收益T+2到账。</p>
+					
+					<p class="p_ques"> 
+						如果认购你们的产品，操作流程是怎么样的？
+					</p>
+					<p class="p_answ">
+					1）联系我们，确认投资的产品及金额，
+					</br>
+					2）向指定账户打款，并保留打款凭证，
+					</br>
+					3）将打款凭证，身份证正反面复印件及银行卡正反面复印件（该银行卡作为投资本金及收益回款的指定卡）发给我们。
+					</br>
+					4）签署协议及投资文件（非深圳本地投资人可通过快递文件进行签署）
+					</p>
+	
+				</div>
+				
+				</br>
+		  </div> 
+		  <div class="tab-pane" style="text-align:left;" id="trend">
+			<div style="padding-left:20px;padding-right:20px;padding-bottom:100px">
+				</br>
+				<p style="font-size:22px; font-weight: bolder;text-align:center;color:#0078BD;padding:20px">鑫祥财富为您介绍行业的最新动态</p>
+				<p style="font-size:18px">由于信息较多，请点击相应动态查看详细内容。<p>
+				</br>
+				<p><a href="javascript:" onclick="trend1Click()"  style="font-size:18px" class="trend">1. 红岭创投2015年度工作总结</a></p>
+				</br>
+				<p><a href="javascript:" onclick="trend2Click()" style="font-size:18px" class="trend" >2. 万达网络金融介绍</a></p>
+			</div>
+		  </div>
+		  
+		</div> 
+
+	</div>
+</div>
+<script src="../../static/js/bootstrap-3.3.4/dist/js/jquery-1.11.3.js" type="text/javascript"></script>
+<script src="../../static/js/bootstrap-3.3.4/dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+</body>
+</html>
