@@ -116,6 +116,7 @@ def login_validate(request,phone,password):
 def Log(request):
     error = []
     if request.method == 'POST':
+		print("login_success")
         form = LoginForm(request.POST)
         if form.is_valid():
           data = form.cleaned_data
@@ -129,5 +130,6 @@ def Log(request):
         else:
           error.append('Please input both username and password')
     else:
+		print("login_panel")
         form = LoginForm()
     return render(request, 'login.html', {'error': error,'form': form})
