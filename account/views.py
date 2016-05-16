@@ -88,7 +88,7 @@ def register(request):
                     user.save()
                     print('save======')
                     #返回注册成功页面
-                    return render(request, 'regist_success.html', {'username':username})
+                    return render(request, 'home_base.html', {'username':username,'logined':True})
                 else:
                     error.append('请输入相同的密码')
             else:
@@ -123,7 +123,7 @@ def Log(request):
           password = data['password']
           result,name = login_validate(request, phone, password)
           if result:
-            return render(request, 'login_success.html', {'username':name})
+            return render(request, 'home_base.html', {'username':name,'logined':True})
           else:
             error.append('Please input the correct password')
         else:

@@ -3,8 +3,7 @@ from django.template import loader,Context
 from django.http import HttpResponse
 
 def xinxiangHome(request):
-	t = loader.get_template("home.html")
-	return HttpResponse(t.render())
+	return render(request, 'home_base.html', {'logined':False})
 	
 def xinxiangHomeTrend(request,parm):
 	 print(parm)
